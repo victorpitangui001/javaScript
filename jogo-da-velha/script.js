@@ -9,6 +9,12 @@ let warning = '';
 let playing = false;
 
 //Events
-
+document.querySelector('.reset').addEventListener('click', reset);
 
 //functions
+function reset(){
+    warning = '';
+
+    let radom = Math.floor(Math.random() * 2);
+    player = (radom === 0) ? 'x' : 'o';
+}
